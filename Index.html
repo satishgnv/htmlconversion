@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way2News</title>
+
+    <link rel="stylesheet" href="css/main-custome.css">
+    <script src="js/simple.js" type="javascript"> </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <!-- Body font-->
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <!--Get it touch-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--footer-->
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <!--Section One Starts Here-->
+    <div class="Img-bg1">
+        <div class="pt-5"> </div>
+        <div class="container">
+            <!-- Top Section-->
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled cust-list">
+                        <li class="pb-5"> <a href="javascript:void(0);" title=""> <img src="images/logo.png" alt=""></a>
+                        </li>
+
+                        <li> <span>India's #1</span></li>
+                        <li>
+                            <h2> Hyperlocal News Platform</h2>
+                        </li>
+                        <li>
+                            <p> One stop destination for reaching your local audience effectively.</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-6 main-form">
+                    <!--Main form-->
+                    <form class="bg-white p-4 rounded float-lg-right form-width">
+                        <h3 class="pb-3">Enter Your details</h3>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Your Full Name">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                    else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="User@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mobile Number</label>
+
+                            <div class="d-flex form-control" id="country-codes">
+                                <button class="bg-white border-0  dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="value">+91</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <input type="email" class="form-control border-0 bg-transparent h-auto d-inline-block"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9990900000">
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" value="+47">Norway (+47)</a></li>
+                                    <li><a href="#" value="+46">Sweeden (+46)</a></li>
+                                    <li><a href="#" value="+79">Danmark (+79)</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group pt-2">
+                            <label for="exampleInputEmail1">Company Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Your Company Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Designation</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ex:Manager">
+                        </div>
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+                        </div>
+                </div>
+
+                <script>
+                    $("#country-codes li a").on("click", function () {
+                        $("#country-codes button span.value").text($(this).attr("value"));
+                    });
+
+                </script>
+                </form>
+            </div>
+            <!-- Top Seciton Ends Here-->
+        </div>
+    </div>
+    <!--Section One Ends Here-->
+
+
+    <!--Section Two Starts Here-->
+    <div class="Img-bg2 public-bg">
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <div class="mobile-pro">
+                    <div class="promotion">
+                        <small> Way2News-</small>
+                        <p> The Real Hyperlocal Platform For All Your <span> Brand Promotions In Telugu </span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 overflow-hid">
+                    <div class="frame">
+                        <img src="images/Subtract.png" alt="" class="thin-frame">
+                        <p> Real Hyperlocal Patform</p>
+                        <span class="mobile-shade"><img src="images/image 34.png" alt=""> </span>
+                        <span class="mobile-icons"> <img src="images/mobil-top 1.png" alt=""> </span>
+                        <span class="smll-icon"> <img src="images/image 35.png"></span>
+                        <span class="farmer"> <img src="images/Farmers.png" alt=""> </span>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="desktop-pro">
+                        <small> Way2News</small>
+                        <div class="promotion">
+                            <p> The Real Hyperlocal Platform For All Your <span> Brand Promotions In Telugu </span></p>
+                        </div>
+                    </div>
+
+                    <div class="counter">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="count-up">
+                                        <p class="counter-count">10</p>
+                                        <span> M+</span>
+                                        <small>Active Users</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="count-up">
+                                        <p class="counter-count">28</p>
+                                        <span style="right: 50px;"> Mins</span>
+                                        <small>Time on app</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container pt-5" id="no-pd">
+                                <div class="row">
+                                    <div class="col-6 p-0">
+                                        <div class="count-up">
+                                            <p class="counter-count">100</p>
+                                            <small>Avarage Views</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="count-up">
+                                            <p class="counter-count">15</p>
+                                            <span style="right:120px;">B</span>
+                                            <small>Views per month</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="description">
+                                <p>Our extremely diversified user base from village, taluk, mandal to metro cities
+                                    level
+                                    will ensure more than 70% of brand
+                                    responses through geo targeting/hyperlocal approach.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Counter ends here-->
+                    <script>
+                        $('.counter-count').each(function () {
+                            $(this).prop('Counter', 8).animate({
+                                Counter: $(this).text()
+                            }, {
+
+                                //chnage count up speed here
+                                duration: 1000,
+                                easing: 'swing',
+                                step: function (now) {
+                                    $(this).text(Math.ceil(now));
+                                }
+                            });
+                        });
+                    </script>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Section Two Ends Here-->
+
+
+    <!--Slikder Section Starts Here-->
+    <div class="Img-bg3">
+        <div class="center-heading promotion">
+            <div class="display text-center pb-4">Multiple Advertising Options on Your Table.</div>
+            <div class="heading text-center">
+                <p>Advertise Your Brand & <span> Reach 10 million+ </span> diversified audiences today !! </p>
+            </div>
+
+            <!-- slider -->
+
+            <div class="hand">
+                <div class="position-relative">
+                    <div class="slider new center">
+                        <div class="slide"> <img src="images/image 26.png" alt=""></div>
+                        <div class="slide"><img src="images/image 27.png" alt=""></div>
+                        <div class="slide"><img src="images/image 28.png" alt=""></div>
+                        <div class="slide"><img src="images/image 29.png" alt=""></div>
+                        <div class="slide"><img src="images/image 30.png" alt=""></div>
+                        <div class="slide"><img src="images/image 28.png" alt=""></div>
+
+
+                    </div>
+
+
+                    <div class="w-100 text-center pos-absolute">
+                        <button type="button" class="btn btn-primary btn-lg cust-btn">Activate now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right ml-5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+                <script>
+
+                    $('.slider.new').slick({
+                        centerMode: true,
+                        centerPadding: '10px',
+                        slidesToShow: 5,
+                        focusOnSelect: true,
+                        dots: false,
+                        infinite: true,
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '20px',
+                                    slidesToShow: 1,
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '20px',
+                                    slidesToShow: 1,
+                                }
+                            }
+                        ]
+                    });
+                </script>
+
+
+            </div>
+
+            <!--slider Ends-->
+
+        </div>
+    </div>
+    <!--Slikder Section Ends Here-->
+
+    <!--Get it touch-->
+    <div class="Img-bg4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="address">
+                        <h2>Get in touch</h2>
+                        <span>Love to see you here,<br>
+                            contact us to promote your brand.</span>
+                        <div class="address_head">Address</div>
+                        <ul>
+                            <li><span> <img src="images/location.png" alt=""> </span>
+                                <p class="m-0">No.62, Hansa Crest, Road No. 1, Park View Enclave,
+                                    Jubilee Hills, Hyderabad,
+                                    Telangana 500033</p>
+                            </li>
+                            <li><span><img src="images/send-2.png" alt=""> </span>
+                                <p class="m-0">reach@way2news.com </p>
+                            </li>
+                            <li><span><img src="images/mobile.png" alt=""> </span>
+                                <p class="m-0"> +91 9581422022 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center order-change">
+                    <img src="images/chat 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Get it touch ends here-->
+
+    <footer class="black-bg pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-white m-0">Copyright @ 2023 Way2News Private Limited All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li> <a href="javascript:void(0);" alt="" class="text-primary"> Terms & Conditions</a></li>
+                        <li> <a href="javascript:void(0);" alt="" class="text-primary"> Privacy policy</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
